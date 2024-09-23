@@ -29,16 +29,38 @@
         }
 
         /* Header */
-        header {
-            background-image: url('https://as2.ftcdn.net/v2/jpg/03/49/06/03/1000_F_349060337_ONVIGJby8UrhnDwwnOd7QrC5oZWwfRzt.jpg');
-            background-size: cover; /* Ensures the image covers the header */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            background-position: center; 
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+       }
+header {
+    background-image: url('D:\221FA04427\MSD project 5\back ground image.jpg');
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Make header sticky */
+    top: 0; /* Keep it at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(15, 118, 191, 0.658);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0);
+    padding: 8px 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+header nav ul li a {
+    text-decoration: underline;
+}
 
         .logo {
             display: inline-block;
