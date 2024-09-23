@@ -4,85 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlavorJoy - Recipes</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f6f1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6c5b7b;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background-color: #f0e1d6;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            color: #6c5b7b;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Filter Section */
+        .filter-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .filter-section h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .filter-section form {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .filter-section select, .filter-section button {
+            padding: 10px 15px;
+            font-size: 1em;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .filter-section button {
+            background-color: #6c5b7b;
+            color: #fff;
+            border: none;
+        }
+
+        /* Recipe Grid */
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+
+        .recipe-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .recipe-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recipe-item h4 {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #6c5b7b;
+        }
+
+        .recipe-item p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .recipe-item a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6c5b7b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .recipe-item a:hover {
+            background-color: #503b5e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6c5b7b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="yD:\221FA04427\MSD project 5\Screenshot 2024-09-22 124408.png" alt="FlavorJoy Logo" class="logo-image"> <!-- Replace 'your-logo-path.jpg' with the actual image path -->
+            <img src="D:\221FA04427\MSD project 5\logooooo.png" alt="FlavorJoy Logo" class="logo-image"> <!-- Replace 'your-logo-path.jpg' with the actual image path -->
         </div>
         <nav>
             <ul>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-        <!-- Main Content -->
-        <main>
-            <section class="hero">
-                <h2>Our Delicious Recipes</h2>
-                <p>Find the perfect recipe for any occasion!</p>
-            </section>
-    
-           <!-- Filter Section -->
-    <section class="filter-section">
-        <h3>Filter by:</h3>
-        <form action="search.html" method="GET">
-            <select name="meal-type">
-                <option value="all">All</option>
-                <optgroup label="Breakfast">
-                    <option value="pancakes">Pancakes</option>
-                    <option value="omelette">Omelette</option>
-                    <option value="smoothies">Smoothies</option>
-                    <option value="waffles">Waffles</option>
-                </optgroup>
-                <optgroup label="Lunch">
-                    <option value="salads">Salads</option>
-                    <option value="sandwiches">Sandwiches</option>
-                    <option value="pasta">Pasta</option>
-                    <option value="wraps">Wraps</option>
-                </optgroup>
-                <optgroup label="Dinner">
-                    <option value="steak">Steak</option>
-                    <option value="pizza">Pizza</option>
-                    <option value="stir-fry">Stir-Fry</option>
-                    <option value="tacos">Tacos</option>
-                </optgroup>
-                <optgroup label="Desserts">
-                    <option value="cake">Cake</option>
-                    <option value="cookies">Cookies</option>
-                    <option value="ice-cream">Ice Cream</option>
-                    <option value="brownies">Brownies</option>
-                </optgroup>
-            </select>
-            <button type="submit">Apply Filter</button>
-        </form>
-    </section>
-    
-            <!-- Recipe Grid -->
-            <section class="recipe-grid">
-                <!-- Example Recipe Item -->
-                <article class="recipe-item">
-                    <img src="D:\221FA04427\MSD project 5\nudels thay.png" alt="Recipe 1">
-                    <h4>Spicy Thai Noodles</h4>
-                    <p>A flavorful and spicy Thai noodle dish with vegetables.</p>
-                    <a href="recipe-details.html">View Recipe</a>
-                </article>
-    
-                <article class="recipe-item">
-                    <img src="D:\221FA04427\MSD project 5\garlic bread.png"alt="Recipe 2">
-                    <h4>Cheesy Garlic Bread</h4>
-                    <p>A delicious and easy-to-make garlic bread with melted cheese.</p>
-                    <a href="recipe-details.html">View Recipe</a>
-                </article>
-    
-                <!-- Add more recipe items here -->
-            </section>
-        </main>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Our Delicious Recipes</h2>
+            <p>Find the perfect recipe for any occasion!</p>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <h3>Filter by:</h3>
+            <form action="search.html" method="GET">
+                <select name="meal-type">
+                    <option value="all">All</option>
+                    <optgroup label="Breakfast">
+                        <option value="pancakes">Pancakes</option>
+                        <option value="omelette">Omelette</option>
+                        <option value="smoothies">Smoothies</option>
+                        <option value="waffles">Waffles</option>
+                    </optgroup>
+                    <optgroup label="Lunch">
+                        <option value="salads">Salads</option>
+                        <option value="sandwiches">Sandwiches</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="wraps">Wraps</option>
+                    </optgroup>
+                    <optgroup label="Dinner">
+                        <option value="steak">Steak</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="stir-fry">Stir-Fry</option>
+                        <option value="tacos">Tacos</option>
+                    </optgroup>
+                    <optgroup label="Desserts">
+                        <option value="cake">Cake</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="ice-cream">Ice Cream</option>
+                        <option value="brownies">Brownies</option>
+                    </optgroup>
+                </select>
+                <button type="submit">Apply Filter</button>
+            </form>
+        </section>
+
+        <!-- Recipe Grid -->
+        <section class="recipe-grid">
+            <!-- Example Recipe Item -->
+            <article class="recipe-item">
+                <img src="D:\221FA04427\MSD project 5\nudels thay.png" alt="Spicy Thai Noodles">
+                <h4>Spicy Thai Noodles</h4>
+                <p>A flavorful and spicy Thai noodle dish with vegetables.</p>
+                <a href="https://youtu.be/a5gwmLovCUs">View Recipe</a>
+            </article>
+
+            <article class="recipe-item">
+                <img src="D:\221FA04427\MSD project 5\garlic bread.png" alt="Cheesy Garlic Bread">
+                <h4>Cheesy Garlic Bread</h4>
+                <p>A delicious and easy-to-make garlic bread with melted cheese.</p>
+                <a href="recipe-details.html">View Recipe</a>
+            </article>
+
+            <!-- Add more recipe items here -->
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 FlavorJoy. All rights reserved.</p>
     </footer>
