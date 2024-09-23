@@ -14,14 +14,38 @@
             padding: 0;
         }
 
-        header {
-            background-color: #6c5b7b;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
+      }
+header {
+    background-image: url('D:\221FA04427\MSD project 5\back ground image.jpg');
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Make header sticky */
+    top: 0; /* Keep it at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(15, 118, 191, 0.658);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0);
+    padding: 8px 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+header nav ul li a {
+    text-decoration: underline;
+}
 
         .logo img {
             width: 150px;
