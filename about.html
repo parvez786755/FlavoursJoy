@@ -4,25 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlavorJoy - About Us</title>
-    <link rel="stylesheet" href="style.css">
- <!-- Header -->
- <header>
-    <div class="logo">
-        <img src="D:\221FA04427\MSD project 5\Screenshot 2024-09-22 124408.png" alt="FlavorJoy Logo" class="logo-image"> <!-- Replace 'your-logo-path.jpg' with the actual image path -->
-    </div>
-    <nav>
-        <ul>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f6f1; /* Light wood color */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6c5b7b; /* Deep purple tone */
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .profile-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #f0e1d6; /* Light beige for profile section */
+        }
+
+        .intro-card {
+            width: 60%;
+        }
+
+        .intro-text {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .image-gallery {
+            width: 35%;
+        }
+
+        .gallery-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .our-team {
+            padding: 50px 20px;
+            background-color: #fff5e8; /* Light cream color for the team section */
+            text-align: center;
+        }
+
+        .our-team h2 {
+            font-size: 2.5em;
+            color: #6c5b7b;
+            margin-bottom: 30px;
+        }
+
+        .team-intro {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            font-size: 1.5em;
+            color: #6c5b7b;
+        }
+
+        .team-member ol {
+            font-size: 1em;
+            color: #333;
+            padding: 0;
+            list-style: none;
+        }
+
+        footer {
+            background-color: #6c5b7b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="D:\221FA04427\MSD project 5\logooooo.png" alt="FlavorJoy Logo" class="logo-image"> <!-- Replace with actual image path -->
+        </div>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li>
-
-        </ul>
-    </nav>
-</header>
+            </ul>
+        </nav>
+    </header>
 
     <main>
+        <!-- Profile Section -->
         <section class="profile-section">
             <div class="intro-card">
                 <p class="intro-text">
@@ -42,68 +175,67 @@
                 <img src="https://img.freepik.com/premium-photo/cooking-age-virtual-reality_893610-5066.jpg" alt="Cooking Image" class="gallery-image">
             </div>
         </section>
+
+        <!-- Our Team Section -->
+        <section class="our-team">
+            <h2>Our Team</h2>
+            <p class="team-intro">
+                We have an entire team of geniuses behind us at FlavorJoy who are experts in everything – from customer service, to social media, to videography, to assisting with recipe shoots. They keep it all running smoothly!
+            </p>
+
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="C:\Users\LENOVO\OneDrive\Pictures\Screenshots 1\Screenshot 2024-09-23 121636.png" alt="Parvez" class="team-photo">
+                    <h3>Parvez</h3>
+                    <ol>
+                        <li>REG NO: 221FA04427</li>
+                        <li>Contact: 8238392228</li>
+                    </ol>
+                </div>
+
+                <div class="team-member">
+                    <img src="C:\Users\LENOVO\OneDrive\Pictures\Screenshots 1\Screenshot 2024-09-23 121736.png" alt="Mujahid" class="team-photo">
+                    <h3>Mujahid</h3>
+                    <ol>
+                        <li>REG NO: 221FA04373</li>
+                        <li>Contact: 8238392228</li>
+                    </ol>
+                </div>
+
+                <div class="team-member">
+                    <img src="C:\Users\LENOVO\OneDrive\Pictures\Screenshots 1\Screenshot 2024-09-23 121843.png" alt="Sohail" class="team-photo">
+                    <h3>Sohail</h3>
+                    <ol>
+                        <li>REG NO: 221FA04316</li>
+                        <li>Contact: 3428709088</li>
+                    </ol>
+                </div>
+
+                <div class="team-member">
+                    <img src="D:\221FA04427\MSD project 5\gopi.jpg" alt="Gopi" class="team-photo">
+                    <h3>Gopi</h3>
+                    <ol>
+                        <li>REG NO: 221FA04310</li>
+                        <li>Contact: 8712868978</li>
+                    </ol>
+                </div>
+
+                <div class="team-member">
+                    <img src="C:\Users\LENOVO\OneDrive\Pictures\Screenshots 1\Screenshot 2024-09-23 121405.png" alt="Chinni" class="team-photo">
+                    <h3>Chinni</h3>
+                    <ol>
+                        <li>REG NO: 221FA04396</li>
+                        <li>Contact: 1467281983</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
     </main>
-    <section class="our-team">
-        <h2>Our Team</h2>
-        <p class="team-intro">
-            We have an entire team of geniuses behind us at FlavorJoy who are experts in a little bit of everything – from customer service, to social media, to videography, to assisting with recipe shoots. They are EVERYTHING.
-        </p>
-        <p class="team-intro">Our team helps keep it all running smoothly.</p>
-    
-        <div class="team-members">
-    
-            <div class="team-member">
-                <img src="https://via.placeholder.com/150" alt="Lindsay Photo" class="team-photo">
-                <h3>Parvez</h3>
-                <ol>                
-                <p>REG NO:221FA04427</p>
-                <P>Contact:8238392228</P>
-                </ol>
-            </div>
-    
-            <div class="team-member">
-                <img src="https://via.placeholder.com/150" alt="Bjork Photo" class="team-photo">
-                <h3>Mujahid</h3>
-                <ol>
-                    <p>REG NO:221FA04373</p>
-                    <P>Contact:8238392228</P>
-                </ol>
-            </div>
-    
-            <div class="team-member">
-                <img src="https://via.placeholder.com/150" alt="Jenna Photo" class="team-photo">
-                <h3>Sohail</h3>
-                <ol>
-                    <p>
-                        REG NO:221FA04316
-                    </p>
-                    <P>Contact: 3428709088</P>
-                </ol>
-            </div>
-    
-            <div class="team-member">
-                <img src="https://via.placeholder.com/150" alt="Krista Photo" class="team-photo">
-                <h3>Gopi</h3>
-                <ol>
-                <p>REG NO:</p>
-                <p>Contact: 8712868978</p>
-                </ol>
-            </div>
-    
-            <div class="team-member">
-                <img src="https://via.placeholder.com/150" alt="Sage Photo" class="team-photo">
-                <h3>Chinni</h3>
-                <ol>
-                    <p>REG NO: 221FA04396</p>
-                    <p>Contact: 1467281983</p>
-                </ol>
-            </div>
-    
-        </div>
-    </section>
-    
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 FlavorJoy. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
