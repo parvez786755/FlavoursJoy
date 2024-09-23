@@ -4,36 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-login {
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .social-logo {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .divider {
+            margin: 20px 0;
+            position: relative;
+            text-align: center;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background: #ccc;
+            position: absolute;
+            top: 50%;
+            width: 45%;
+        }
+
+        .divider::before {
+            left: 0;
+        }
+
+        .divider::after {
+            right: 0;
+        }
+
+        .divider span {
+            background: white;
+            padding: 0 10px;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="left-side">
-            <img src="D:\221FA04427\MSD project 5\image of logo.jpeg" alt="Left Side Image">
+        <div class="logo">
+            <img src="D:\221FA04427\MSD project 5\logooooo.png" alt="Your Logo">
         </div>
-        <div class="right-side">
-            <div class="login-form">
-                <h2>Sign in to FlavourJoy</h2>
-                <button class="google-signin">
-                    <img src="D:\221FA04427\MSD project 5\signin with google.jpg" alt="Google Sign-In" />
-                </button>
-                <h3>or sign in with email</h3>
-                <form>
-                    <div class="input-field">
-                        <label for="username">Username or Email</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="input-field">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <a href="#" class="forgot">Forgot?</a>
-                    <button type="submit" class="signin-button">Sign In</button>
-                    
-                </form>
-                
-
-                <p>Don't have an account? <a href="#">Sign up</a></p>
+        <h1>Login</h1>
+        <form>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <a href="logout page.html" class="login-button">Login</a>
+        </form>
+        <div class="divider">
+            <span>OR</span>
+        </div>
+        <div class="social-login">
+            <p>Continue with:</p>
+            <div class="social-icons">
+                <img src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo-thumbnail.png" alt="Google" class="social-logo">
+                <img src="https://pngimg.com/uploads/microsoft/microsoft_PNG13.png" alt="Microsoft" class="social-logo">
+                <img src="https://i.pinimg.com/736x/65/22/5a/65225ab6d965e5804a632b643e317bf4.jpg" alt="Apple" class="social-logo">
             </div>
         </div>
     </div>
