@@ -30,29 +30,17 @@ p {
 
 /* Header */
 header {
-    background-image: url('D:\221FA04427\MSD project 5\back ground image.jpg');
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky; /* Make header sticky */
-    top: 0; /* Keep it at the top */
-    z-index: 1000; /* Ensure it stays above other content */
-}
+            background-color: #6c5b7b; /* Deep purple tone */
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
 
-.logo {
-    background-color: rgba(255, 255, 255, 0); /* Adds a background box for the logo */
-    padding: 10px 25px; /* Space around the image */
-    border-radius: 10px; /* Rounds the corners */
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 70px; /* Adjust size as per the design */
-    width: 150px;
-}
+        .logo img {
+            width: 150px;
+        }
 header nav ul {
     list-style: none;
     display: flex;
